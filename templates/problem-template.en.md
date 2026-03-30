@@ -1,52 +1,50 @@
-# Problem Title
+# [Problem title]
 
-## Summary
-A short explanation of the real-world problem.
+## Problem summary
+[Write a short paragraph explaining the problem clearly and directly.]
 
-## Who experiences this problem?
-- Primary users
-- Secondary users
-- Stakeholders
+## Real-world report
+[A person should describe this problem in first person, as if they are genuinely living it.]
 
-## Why this matters
-Explain the operational, emotional, or financial impact.
+[Explain what happens in practice.]
 
-## Real-world context
-Describe when and where this problem happens.
+[Explain what usually goes wrong.]
 
-## Constraints and challenges
-- Regulation
-- Low digital maturity
-- Limited budget
-- Poor connectivity
-- Fragmented communication
-- Manual processes
+[Explain what depends too much on memory, improvisation, or scattered communication.]
 
-## What could be built?
-This section should suggest directions, not prescribe one solution.
-- Internal dashboard
-- Mobile-first tool
-- Workflow automation
-- Notification system
-- Shared visibility platform
+[Explain how this affects daily life, work, care, coordination, or decision-making.]
 
-## Portfolio value
-Why this is a strong portfolio/open-source project:
-- involves real workflows
-- has clear user roles
-- can evolve into MVP + analytics + automation
-- good for fullstack/backend/frontend/data projects
+## Why this is difficult
+[Explain the hidden complexity behind the problem.]
 
-## Possible MVP scope
-- MVP item 1
-- MVP item 2
-- MVP item 3
+[What makes this difficult even when people care and try?]
 
-## Nice follow-up ideas
-- advanced reporting
-- role permissions
-- integrations
-- AI-assisted suggestions
+## Why it matters
+[Explain the operational, emotional, financial, or practical impact.]
 
-## Tags
-`portfolio` `real-world` `operations` `workflow`
+[What gets worse when this problem is not solved?]
+
+## Open-source opportunity
+[Explain why this is a strong open-source problem.]
+
+[Why is this useful, relevant, and worth building around?]
+
+## Technical requirements
+- [Requirement 1]
+- [Requirement 2]
+- [Requirement 3]
+- [Requirement 4]
+- [Requirement 5]
+- [Requirement 6]
+
+## Suggested MVP
+- [MVP item 1]
+- [MVP item 2]
+- [MVP item 3]
+- [MVP item 4]
+
+## Possible extensions
+- [Extension 1]
+- [Extension 2]
+- [Extension 3]
+- [Extension 4]

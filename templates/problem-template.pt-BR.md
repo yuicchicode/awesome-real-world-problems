@@ -1,52 +1,50 @@
-# Título do problema
+# [Título do problema]
 
-## Resumo
-Uma explicação curta do problema real.
+## Resumo do problema
+[Escreva um parágrafo curto explicando o problema de forma clara e direta.]
 
-## Quem vive esse problema?
-- Usuários principais
-- Usuários secundários
-- Stakeholders
+## Relato do mundo real
+[Esta seção deve ser escrita em primeira pessoa, como se alguém estivesse vivendo esse problema de verdade.]
 
-## Por que isso importa?
-Explique o impacto operacional, emocional ou financeiro.
+[Explique o que acontece na prática.]
 
-## Contexto do mundo real
-Descreva quando e onde isso acontece.
+[Explique o que costuma dar errado.]
 
-## Restrições e desafios
-- Regulação
-- Baixa maturidade digital
-- Orçamento limitado
-- Internet ruim
-- Comunicação fragmentada
-- Processos manuais
+[Explique o que depende demais de memória, improviso ou comunicação espalhada.]
 
-## O que poderia ser construído?
-Sugira direções, sem prender a uma solução única.
-- Painel interno
-- Ferramenta mobile-first
-- Automação de fluxo
-- Sistema de notificações
-- Plataforma de visibilidade compartilhada
+[Explique como isso afeta a rotina, o trabalho, o cuidado, a coordenação ou a tomada de decisão.]
 
-## Valor para portfólio
-Por que isso é forte para portfólio / opensource:
-- envolve fluxo real
-- tem papéis de usuário claros
-- pode evoluir para MVP + analytics + automações
-- serve para projetos fullstack/backend/frontend/dados
+## Por que isso é difícil
+[Explique a complexidade escondida por trás do problema.]
 
-## Escopo possível de MVP
-- Item 1
-- Item 2
-- Item 3
+[O que faz isso falhar mesmo quando as pessoas se importam e tentam fazer dar certo?]
 
-## Ideias para evolução
-- relatórios avançados
-- permissões por perfil
-- integrações
-- sugestões com IA
+## Por que isso importa
+[Explique o impacto operacional, emocional, financeiro ou prático.]
 
-## Tags
-`portfolio` `problema-real` `operacoes` `workflow`
+[O que piora quando esse problema não é resolvido?]
+
+## Oportunidade opensource
+[Explique por que esse é um bom problema para um projeto opensource.]
+
+[Por que isso é útil, relevante e vale a pena construir em torno dele?]
+
+## Requisitos técnicos
+- [Requisito 1]
+- [Requisito 2]
+- [Requisito 3]
+- [Requisito 4]
+- [Requisito 5]
+- [Requisito 6]
+
+## MVP sugerido
+- [Item 1]
+- [Item 2]
+- [Item 3]
+- [Item 4]
+
+## Possíveis extensões
+- [Extensão 1]
+- [Extensão 2]
+- [Extensão 3]
+- [Extensão 4]

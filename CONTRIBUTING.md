@@ -24,9 +24,9 @@ Good contributions usually describe:
 Examples of good entries:
 
 - Patients are hard to monitor after they leave the clinic
-- Small businesses often lack a simple inventory workflow
+- Small businesses often lack reliable inventory control
 - Sales and marketing teams rely on conflicting lead numbers
-- Volunteers are hard to coordinate across schedules and locations
+- Volunteers are hard to coordinate across schedules and responsibilities
 
 ---
 
@@ -120,7 +120,7 @@ You can contribute by:
 - improving an existing problem statement
 - refining wording for clarity and realism
 - adding a new category
-- translating content
+- translating documentation or category pages
 - improving documentation and contribution guidelines
 - finding duplicates or overlapping entries
 
@@ -129,73 +129,113 @@ You can contribute by:
 ## Repository structure
 
 ```text
-categories/
-  en/
-  pt-BR/
-
-problems/
-  en/<category>/
-  pt-BR/<category>/
-
-templates/
-docs/
+awesome-real-world-problems/
+├── .github/
+├── categories/
+│   ├── daily-life/
+│   ├── education/
+│   ├── healthcare/
+│   ├── hr/
+│   ├── international-trade/
+│   ├── local-commerce/
+│   ├── logistics-transport/
+│   ├── ngos-social-impact/
+│   ├── pets/
+│   └── sales-marketing/
+├── docs/
+├── templates/
+├── CONTRIBUTING.md
+├── CONTRIBUTING.pt-BR.md
+├── README.md
+└── README.pt-BR.md
 ```
 
-# How to add a new problem
+Each category folder currently contains:
+
+- a README.md in English
+- a README.pt-BR.md in Portuguese
+- individual problem files in English
+
+Example:
+
+```
+categories/
+  pets/
+    README.md
+    README.pt-BR.md
+    disorganized-pet-history.md
+    difficulty-monitoring-basic-pet-health.md
+```
+
+## How to add a new problem
+
 ### 1. Check for duplicates
 
- Before opening a PR, make sure the same problem is not already listed in another category or with slightly different wording.
+Before opening a PR, make sure the same problem is not already listed in another category or with slightly different wording.
 
 ### 2. Choose the right category
 
- Add the problem to the category where it most naturally belongs.
+Add the problem to the category where it most naturally belongs.
 
- If no category fits well, open an issue suggesting a new one.
+If no category fits well, open an issue suggesting a new one.
 
 ### 3. Create the problem entry
 
- Use the problem template and keep the structure consistent.
+Create a new file inside the appropriate category folder:
+
+```categories/<category>/<problem-slug>.md```
+
+Example:
+
+```categories/healthcare/patient-follow-up-breaks-down-between-appointments.md```
+
+Use the problem template in: [Templates](./templates/)
 
 ### 4. Update the category index
 
- Add the new problem link to the corresponding category file.
+Add the new problem to the category’s [README.md](README.md).
+
+If the category’s [README.pt-BR.md](README.pt-BR.md) includes mirrored examples or listing structure, update it too when appropriate.
 
 ### 5. Keep the entry realistic and useful
 
- Make sure the problem is grounded in real-world context and not just a thin app idea.
+Make sure the problem is grounded in real-world context and not just a thin app idea.
 
-## Problem writing guidelines
+#
 
- Each problem entry should aim to answer these questions:
+## Problem Writing guidelines
+
+Each problem entry should aim to answer these questions:
 
 - What is the problem?
 - Who experiences it?
 - Why does it matter?
 - In what context does it happen?
 - What makes it hard?
-- Why is it a good portfolio/open-source problem?
+- Why is it a good portfolio/open-source - problem?
 
-## A strong entry usually contains:
+A strong entry usually contains:
 
 - a concise title
 - a short summary
-- affected users or stakeholders
-- real-world context
-- constraints and challenges
-- possible project directions
-- portfolio value
-- possible MVP scope
-- tags
-- Title guidelines
+- a first-person real-world report
+- why the problem is difficult
+- why it matters
+- open-source opportunity
+- technical requirements
+- suggested MVP
+- possible extensions
 
 #
 
-## Titles should describe the problem, not the product.
+## Title guidelines
+
+Titles should describe the problem, not the product.
 
 Good examples:
 
-- Patient progress is hard to track outside - the clinic
-- Lead data is fragmented across multiple platforms
+- Patient progress is hard to track outside the clinic
+- Lead information is scattered across multiple platforms
 - Small business owners end up managing everything alone
 
 Avoid:
@@ -203,15 +243,18 @@ Avoid:
 - Clinic dashboard
 - CRM for sales teams
 - Volunteer management app
-- Writing style
+
+#
+
+## Writing style
 
 Please keep entries:
 
 - clear
 - practical
 - descriptive
-- concise
 - realistic
+- human
 - jargon-light
 
 Prefer concrete language over abstract business language.
@@ -224,24 +267,27 @@ Weak:
 
 - Logistics stakeholders experience visibility challenges in operational ecosystems
 
-#
-
-# Good contribution checklist
-
-### Before submitting, check that your entry:
-
- - describes a real-world problem, not just a product idea
- - explains who is affected
- - explains why the problem matters
- - includes useful context
- - leaves room for multiple implementation approaches
- - is not a duplicate
- - is written clearly in English
- - is added to the correct category index
+The entry should feel like a person is genuinely describing a real problem, not pitching a startup idea.
 
 #
 
-## Categories and overlap
+## Good contribution checklist
+
+Before submitting, check that your entry:
+
+- describes a real-world problem, not just a product idea
+- explains who is affected
+- explains why the problem matters
+- includes useful context
+- leaves room for multiple implementation approaches
+- is not a duplicate
+- is written clearly in English
+- is placed in the correct category folder
+- is linked from the category README.md
+
+##
+
+### Categories and overlap
 
 Some problems can fit more than one category. That is normal.
 
@@ -249,38 +295,48 @@ Choose the category based on the main context of the pain point.
 
 Example:
 
-- “Fragmented communication between clinics and patients” belongs more naturally in Health
-“Fragmented communication between importers and carriers” belongs more naturally in International Trade
+- “Fragmented communication between clinics and patients” belongs more naturally in healthcare
+- “Fragmented communication between importers and carriers” belongs more naturally in international-trade
 
 If needed, mention cross-category relevance in the entry, but avoid duplicating the same problem in many places.
+
+#
 
 ## Translation contributions
 
 The main language of this repository is English.
 
-Portuguese (Brazil) translations or any other language are welcome.
+At the moment, the canonical problem files live in English inside the category folders.
+
+Portuguese (Brazil) is currently used in supporting materials such as:
+
+- README.pt-BR.md
+- category-level README.pt-BR.md
+- CONTRIBUTING.pt-BR.md
 
 If you contribute a translation:
 
 - preserve the original meaning
-adapt naturally instead of translating word by word
-keep terminology clear and practical
-maintain the same structure as the English version
+- adapt naturally instead of translating word by word
+- keep terminology clear and practical
+- maintain the same structure as the English version
 
-When possible:
+If the project later adopts translated problem files, contributors should follow the structure defined by the maintainers at that time.
 
-- add the English version first
-then add the pt-BR version in the corresponding path
-Pull requests
+#
+
+### Pull requests
 
 When opening a pull request, please include:
 
 - what you added or changed
-the category affected
-whether it is a new problem, translation, improvement, or new category
-any possible overlap with existing entries
+- the affected category
+- whether it is a new problem, translation, improvement, or new category
+- any possible overlap with existing entries
 
 Small, focused pull requests are preferred.
+
+#
 
 ## Suggestions for strong contributions
 
@@ -297,7 +353,7 @@ You do need to make the problem feel real.
 
 Strong
 
-- Parents lack clear visibility into a student’s actual progress
+Parents lack clear visibility into a student’s actual progress
 
 - clear users
 - real context
@@ -306,7 +362,7 @@ Strong
 
 Weak
 
-"Build an app for parents and teachers"
+Build an app for parents and teachers
 
 - solution-first
 - vague
@@ -315,7 +371,7 @@ Weak
 
 Strong
 
-"Small NGOs struggle to coordinate volunteers across schedules and activities"
+Small NGOs struggle to coordinate volunteers across schedules and activities
 
 - realistic
 - operational
@@ -324,20 +380,27 @@ Strong
 
 Weak
 
-"Volunteer platform"
+Volunteer platform
 
 - too broad
 - no context
 - no pain described
-- Respect the spirit of the project
+
+#
+
+## Respect the spirit of the project
 
 This is not a startup idea dump.
+
 This is not a random app-idea list.
+
 This is not a “100 projects to practice React” repository.
 
 This project is about helping developers build things that are closer to the messy, real, constrained problems found in actual life, work, and communities.
 
-# Need help?
+#
+
+## Need help?
 
 If you are unsure whether a contribution fits, open an issue first.
 
@@ -349,13 +412,13 @@ Good issue types:
 - wording improvement
 - translation proposal
 
-# License
+#
+
+## License
 
 By contributing, you agree that your contributions will be licensed under the same licenses used by this repository.
 
 See:
 
-- LICENSE-CONTENT
-- LICENSE-CODE
-
-Thanks for helping make this repository more useful to developers and contributors everywhere.
+- [LICENSE-CONTENT](LICENSE-CONTENT).
+- [LICENSE-CODE](LICENSE-CODE).
